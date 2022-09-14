@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szasz Francisc</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+<body onload="myFunction()">
+
+  <div id="loader"></div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+  <div class="background_div">
+        
+  <nav>
+    <div class="navigation">
+       <div class="brand"><img class="logo" src="img/logo.png"></div>
+       <div class="links">
+        <ul id="sidemenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#ab">About me</a></li>
+            <li><a href="#proj">Projects</a></li>
+            <li><a href="#cont">Contact</a></li>
+            <img onclick="closeMenu()" class="close_menu_button" src="img/close-window-32.png">
+        </ul>
+        <img onclick="openMenu()" class="open_menu_button" src="img/menu-4-32.png">
+       </div>
+    </div>
+  </nav>
+    <div class="container">
+      <div class="presentation">
+        <h2 class="title">Hi, i'm <span class="F_letter">Francisc</span></h2>
+        <h3 class="title_info">Web developer from Romania</h3>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ABOUT SECTION -->
+<section id="ab">
+  <div id="about" class="reveal">
+
+    <div class="container2">
+      <div class="row">
+          <div class="about-col-1"><img src="img/about.JPG"></div>
+          <div class="about-col-2">
+            <h2 class="about_title">About me</h2>
+            <p>I'm currently following a master's degree in Informatics, specialization Internet Technologies. I started to learn front-end a couple of months ago and my goal is to go beyond the horizon :). When i finish my master's degree i want to already be working at one of the biggest companies out there, like Google or Facebook.</p>
+         
+
+                  <div class="tab_titles">
+
+                     <p class="tab_links active-link" onclick="openTab('skills')">Skills</p>
+                     <p class="tab_links" onclick="openTab('experience')">Experience</p>
+                     <p class="tab_links" onclick="openTab('education')">Education</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                   <ul>
+                     <li><span>Web development</span><br>HTML, CSS, JS, Bootstrap, React</li>
+                     <li><span>Web design</span><br>UI/UX design</li>
+                     <li><span>Embedded design</span><br>Circuit design, C/C++ embedded</li>
+                   </ul>
+                  </div>
+
+                  <div class="tab-contents" id="experience">
+                   <ul>
+                     <li><span>2021-2022</span><br>Started to learn a lot about Web developing, made over 10 websites</li>
+                     <li><span>2019-2020</span><br>I've made a couple of websites in college</li>
+                     
+                   </ul>
+                  </div>
+
+                  <div class="tab-contents" id="education">
+                   <ul>
+                     <li><span>2022 - present</span><br>Master's Degree - Internet Technologies</li>
+                     <li><span>2018 - 2022</span><br>Bachelor's Degree - Computer Science</li>
+                     <li><span>2011 - 2015</span><br>Mechatronics Highscool</li>
+                   </ul>
+                  </div>
+          </div>
+      </div>
+    </div>
+
+ </div>
+
+</section>
+
+<section id="proj">
+      <div class="projects reveal">
+        <div class="container3">
+          <h1 class="project_title">My projects</h1>
+          <div class="services-list">
+
+                <div>
+                  <img src="img/bank-building.png">
+                  <h2>Bank Management System</h2>
+                  <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                  <img src="img/car.png">
+                  <h2>Car verification platform</h2>
+                  <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                  <img src="img/youtube.png">
+                  <h2>Youtube Channel Website</h2>
+                  <a href="#">Learn more</a>
+                </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+<section id="cont">
+<div id="contact" class="reveal">
+
+  <div class="container4">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="contact-me">Contact me</h1>
+        <p><img src="img/paper-plane-32.png">francisc_szasz@aol.com</p>
+        <p><img src="img/phone-28-32.png">(+40) 720628821</p>
+       
+        <div class="social-icons">
+          <img src="img/facebook-3-32.png">
+          <img src="img/instagram-32.png">
+          <img src="img/linkedin-3-32.png">
+          <img src="img/youtube-4-32.png">
+
+        </div>
+        <button class="btn"onclick="window.open('Szasz_Francisc_CV.pdf')">Download CV</button>
+      </div>
+
+      <div class="contact-right">
+
+         <form>
+            <input type="text" name="Name" placeholder="your name" required>
+            <input type="email" name="email" placeholder="email" required>
+            <textarea name="message" rows="6" placeholder="message"></textarea>
+             <button class="btn" type="submit ">Submit</button>
+          </form>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</section>
+
+
+  <div class="copyright">
+    <p>Designed by Francisc with GSAP</p>
+  </div>
+
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    
+    <script>
+
+gsap.from('.title', {duration: 2.5, x: '-100%', opacity:0})
+gsap.from('.title_info', {duration: 2, delay:2, x: '-100%', opacity:0})
+gsap.from('.background_div', {duration: 1, delay: 1, fade: '+100%', opacity:0})
+gsap.from('.navigation', {duration: 2, y: '-100%', delay: 1, opacity: 0})
+gsap.from('.about', {duration: 2, y: '-100%', delay: 1, opacity: 0})
+
+    </script>
+    <script>
+
+           var tablinks = document.getElementsByClassName('tab_links')
+           var tabcontents = document.getElementsByClassName('tab-contents')
+
+           function openTab(tabname) {
+              for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+              }
+              for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+              }
+              event.currentTarget.classList.add("active-link");
+              document.getElementById(tabname).classList.add("active-tab");
+           }
+    </script>
+
+    <script>
+      var timing;
+
+function myFunction() {
+  timing = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
+
+
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+    </script>
+
+    <script>
+
+           var sidemenu = document.getElementById("sidemenu");
+
+           function openMenu() {
+            sidemenu.style.right = "0";
+           }
+           function closeMenu() {
+            sidemenu.style.right = "-200px";
+           }
+
+    </script>
+</body>
+</html>
