@@ -174,9 +174,6 @@ li a {
     margin: 0 10vw;
    
 }
-.about-col-2 {
-
-}
 
 .about-col-1 img {
     margin: 0 70px;
@@ -301,7 +298,7 @@ li a {
 }
 
 .services-list div:hover{
-    background: rgb(0, 0, 255);
+    background-image: linear-gradient(to bottom, rgb(31, 31, 255), white);
     transform: translateY(-10px);
     cursor: pointer;
 }
@@ -574,4 +571,14 @@ form input, form textarea {
         transition: 0.4s;
         cursor: pointer;
     }
+}
+
+#msg {
+    color: blue;
+    font-size: 20px;
+    font-family: 'Orbitron';
+    margin-top: -10px;
+    display: block;
+    text-align: center;
+    align-items: center;
 }
