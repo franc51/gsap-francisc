@@ -164,7 +164,7 @@ li a {
 /* About */
 
 #about {
-    padding: 80px 0;
+    padding: 10px 0;
     color: rgb(174, 174, 226);
     background-color: rgb(0, 0, 0);
 }
@@ -181,8 +181,7 @@ li a {
 .about-col-1 img {
     margin: 0 70px;
     border-radius: 16px;
-    width: 25vw;
-    
+    width: 25vw;   
 }
 
 .about_title {
@@ -204,7 +203,6 @@ li a {
     cursor: pointer;
     position: relative;
     transition: 0.4s;
-    
 }
 .tab_links::after {
     content: '';
@@ -252,7 +250,7 @@ li a {
 } 
 
 
-/* Projects  */
+/* Projects  */ /* Projects  *//* Projects  *//* Projects  *//* Projects  *//* Projects  *//* Projects  *//* Projects  */
 
 .projects {
     padding: 30px 0;
@@ -263,17 +261,14 @@ li a {
     margin: 0 200px;
 }
 
-.container4 {
-    align-items: center;
-    
-    margin: 100px 100px;
-}
+
 .services-list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
+
 .services-list h2 {
     font-size: 20px;
 }
@@ -311,9 +306,12 @@ li a {
     cursor: pointer;
 }
 
-/* Contact  */
+/* Contact  */ /* Contact  *//* Contact  *//* Contact  *//* Contact  *//* Contact  */
 
-
+.container4 {
+    align-items: center;
+    margin: 100px 0px;
+}
 .contact-right { 
     flex-basis: 60%;
 }
@@ -412,7 +410,7 @@ form input, form textarea {
     .presentation {
         display: flex;
         flex-direction: column;
-        margin: 60vh 2vh;
+        margin: 70vh 2vh;
        
     }
     h1{
@@ -456,7 +454,7 @@ form input, form textarea {
     nav ul {
         background: blue;
         position: fixed;
-        margin-top: -40px;
+        margin-top: -22px;
         right: -200px;
         width: 200px;
         height: 100vh;
@@ -492,5 +490,88 @@ form input, form textarea {
         -webkit-animation: spin 2s linear infinite;
         animation: spin 2s linear infinite;
       }
-
+      .about_title {
+        font-size: 40px;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+    }
+    .about-col-1 img {
+        margin: 0 10px;
+        border-radius: 10px;
+        width: 85vw; 
+        
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 0 5vw;
+    }
+    .tab_links{
+        margin-right: 50px;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+        transition: 0.4s;
+    }
+    .container3 {
+        text-align: center;
+        margin: 0 20px;
+    }
+    .services-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .services-list div {
+        background: #ffffff;
+        padding: 30px;
+        margin: 20px 0;
+        font-size: 14px;
+        font-weight: 300;
+        border-radius: 4px;
+        color: black;
+        transition: 0.4s;
+    }
+    .services-list div:hover{
+        background-image: linear-gradient(to bottom, rgb(31, 31, 255), white);
+        transform: translateY(-10px);
+        cursor: pointer;
+    }
+    .contact-left {
+        text-align: left;
+        padding: 10px 10px;
+        border-radius: 6px;
+    }
+    .social-icons {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .social-icons img {
+        transition: 0.4s;
+        margin-right: 10px;
+        display: inline;
+        cursor: pointer;
+    }
+    .container4 {
+        align-items: center;
+        margin: 40px 0px;
+        padding: 0 20px;
+    }
+    .btn{
+        margin: 20px 30px;
+        height: 50px;
+        width: 200px;
+        font-size: 16px;
+        font-family: 'Orbitron';
+        border: 2px solid blue;
+        border-radius: 4px;
+        background-color: black;
+        color: white;
+        transition: 0.4s;
+        cursor: pointer;
+    }
 }
