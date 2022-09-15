@@ -165,8 +165,8 @@
     
     <script>
 
-gsap.from('.title', {duration: 2.5, x: '-100%', opacity:0})
-gsap.from('.title_info', {duration: 2, delay:2, x: '-100%', opacity:0})
+gsap.from('.title', {duration: 3, x: '-100%', opacity:0})
+gsap.from('.title_info', {duration: 3, delay:2, x: '-100%', opacity:0})
 gsap.from('.background_div', {duration: 1, delay: 1, fade: '+100%', opacity:0})
 gsap.from('.navigation', {duration: 2, y: '-100%', delay: 1, opacity: 0})
 gsap.from('.about', {duration: 2, y: '-100%', delay: 1, opacity: 0})
@@ -228,10 +228,13 @@ window.addEventListener("scroll", reveal);
            var sidemenu = document.getElementById("sidemenu");
 
            function openMenu() {
-            sidemenu.style.right = "0";
+            
+            sidemenu.classList.add("show_menu");
+            sidemenu.classList.remove("hide_menu");
            }
            function closeMenu() {
-            sidemenu.style.right = "-200px";
+            sidemenu.classList.add("hide_menu");
+            sidemenu.classList.remove("show_menu");
            }
 
     </script>
