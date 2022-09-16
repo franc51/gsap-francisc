@@ -168,7 +168,7 @@ li a {
 /* About */
 
 #about {
-    padding: 10px 0;
+    padding: 100px 0;
     color: rgb(174, 174, 226);
     background-color: rgb(0, 0, 0);
 }
@@ -275,7 +275,7 @@ li a {
 }
 
 .services-list div {
-    background: #b1bac7;
+    background: #ebeff5;
     padding: 18px;
     font-size: 14px;
     font-weight: 300;
@@ -336,6 +336,7 @@ li a {
 .social-icons {
     margin-top: 30px;
     text-align: center;
+    
 }
 .social-icons img {
     transition: 0.4s;
@@ -346,8 +347,9 @@ li a {
 }
 
 .social-icons img:hover {
-
-    transform: translateY(-8px);
+     background-color: blue;
+     border-radius: 2px;
+     transform: translateY(-8px);
    
 }
 
