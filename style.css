@@ -254,7 +254,7 @@ li a {
 /* Projects  */ /* Projects  *//* Projects  *//* Projects  *//* Projects  *//* Projects  *//* Projects  *//* Projects  */
 
 .projects {
-    padding: 30px 0;
+    padding: 10px 10px;
 }
 
 .container3 {
@@ -266,7 +266,7 @@ li a {
 .services-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -277,6 +277,7 @@ li a {
 .services-list div {
     background: #ebeff5;
     padding: 18px;
+    margin: 10px;
     font-size: 14px;
     font-weight: 300;
     border-radius: 2px;
@@ -285,10 +286,11 @@ li a {
 }
 .services-list div a {
     text-decoration: none;
-    color: rgb(65, 62, 62);
+    color: blue;
     font-size: 16px;
     margin-top: 10px;
     display: inline-block;
+    font-weight: 600;
 }
 .services-list img {
     margin: 16px;
@@ -443,6 +445,9 @@ form input, form textarea {
 
     .close_menu_button {
         display: block;
+        transition: all 1s;
+        -webkit-transition: all 1s;
+        opacity: 1;
     }
     .open_menu_button {
         display: block;
@@ -456,8 +461,6 @@ form input, form textarea {
         width: 160px;
         height: 75.5vh;
         left: 200px;
-        transition: 0.4s, ease;
-        border-radius: 4px;
     }
 
     nav ul li {
@@ -469,6 +472,7 @@ form input, form textarea {
         top: 10px;
         left: 110px;
         cursor: pointer;
+        transition: 0.4s;
     }
 
     .navigation {
